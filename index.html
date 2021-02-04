@@ -93,13 +93,21 @@
 <li>修正关于<code>LEPT_PARSE_ROOT_NOT_SINGULAR</code>的单元测试</li>
 <li>加入<code>test_parse_true()</code>、<code>test_parse_false()</code>单元测试</li>
 <li>完成true和false值的解析<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2></li>
-<li>C语言中，成员选择运算符（-&gt;）优先级高于解引用运算符（*），所以代码<code>*c-&gt;json</code>等同于<code>*(c-&gt;json)</code>。<br>附<a target="_blank" rel="noopener" href="https://blog.csdn.net/changexhao/article/details/82556761">c语言运算符优先级表</a></li>
+<li>C语言中，成员选择运算符（-&gt;）优先级高于解引用运算符（*），所以代码<code>*c-&gt;json</code>等同于<code>*(c-&gt;json)</code>，附<a target="_blank" rel="noopener" href="https://blog.csdn.net/changexhao/article/details/82556761">c语言运算符优先级表</a>。</li>
+<li>测试驱动开发（test driven development, TDD）</li>
+</ul>
+<p>#Day2</p>
+<h2 id="1-完成单元练习"><a href="#1-完成单元练习" class="headerlink" title="1.完成单元练习"></a>1.完成单元练习</h2><ul>
+<li>重构合并<code>lept_parse_null()</code>、<code>lept_parse_false()</code>、<code>lept_parse_true()</code>为<code>lept_parse_literal()</code></li>
+<li>加入边界值至单元测试</li>
+<li>根据新添加的测试内容修改<code>lept_parse_number()</code><br>##记录</li>
+<li>注意–i和i-1的使用，前者会改变i值，后者不会，所以在条件判断中慎用自增自减运算符，并且在一个表达式中，不要对在两个或更多子表达式中出现的对象自增或自减，例如<code>if(ia[index++]&lt;ia[index])</code>，此表达式的行为没有明确定义。</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/31/use-C-to-write-JSON-lib/" data-id="ckkmpjcb900006cvr4onhauvg" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/01/31/use-C-to-write-JSON-lib/" data-id="ckkqjbrwo00003ovr8u0g39bd" data-title="" class="article-share-link">Share</a>
       
       
       
